@@ -1,6 +1,6 @@
 {
     "name": "Mon Petit Parquet",
-    "short_name": "Pampa",
+    "short_name": "MPP",
     "start_url": "./?utm_source=web_app_manifest",
     "icons": [{
       "src": "assets/img/icons/Icone128.png",
