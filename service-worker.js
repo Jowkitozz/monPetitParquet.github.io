@@ -1,21 +1,21 @@
 const CACHE_NAME = 'mpp-cache-v1';
 
 const FILES_TO_CACHE = [
-'/index.html'];
+  '/index.html'];
 
 var FILES_TO_CACHE = [
-    './',
-    './index.html'
+  './',
+  './index.html'
 ];
-  
-self.addEventListener('install', (evt) => {
-    console.log('[ServiceWorker] Install');
-    evt.waitUntil(
-      caches.open(CACHE_NAME).then((cache) => {
-        console.log('[ServiceWorker] Pre-caching offline page');
-        return cache.addAll(FILES_TO_CACHE);
+
+self.addEventListener('install', function (event) {
+  // Perform install steps
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(function (cache) {
+        console.log('Opened cache');
+        return cache.addAll(urlsToCache);
       })
-    );
-    self.skipWaiting();
-  });
-  
+  );
+});
+
