@@ -1,11 +1,11 @@
 {
-  "short_name": "MPP",
   "name": "Mon Petit Parquet",
-  "display": "standalone",
-  "background_color": "#009962",
-  "theme_color": "#85DBBC",
-  "Scope": "/",
-  "orientation": "portrait",
+  "short_name": "MPP",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "browser",
+  "scope": "/",
+  "start_url": "./?utm_source=web_app_manifest",
   "icons": [
     {
       "src": "images/android/android-launchericon-48-48.png",
@@ -22,6 +22,5 @@
       "type": "image/png",
       "sizes": "192x192"
     }
-  ],
-  "start_url": "./?utm_source=web_app_manifest",
+  ]
 }
