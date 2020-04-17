@@ -2,7 +2,10 @@ const CACHE_NAME = 'mpp-cache-v1';
 
 var FILES_TO_CACHE = [
   './',
-  './index.html'
+  './index.html',
+  './contact.html',
+  './about.html',
+  './services.html'
 ];
 
 self.addEventListener('install', (evt) => {
