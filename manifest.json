@@ -8,17 +8,17 @@
   "start_url": "./?utm_source=web_app_manifest",
   "icons": [
     {
-      "src": "/img/icons/Icone128.png",
+      "src": "/monPetitParquet.github.io/img/icons/Icone128.png",
       "sizes": "128x128",
       "type": "image/png"
     },
     {
-      "src": "/img/icons/Icone256.png",
+      "src": "/monPetitParquet.github.io/img/icons/Icone256.png",
       "sizes": "256x256",
       "type": "image/png"
     },
     {
-      "src": "/img/icons/Icone512.png",
+      "src": "/monPetitParquet.github.io/img/icons/Icone512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
