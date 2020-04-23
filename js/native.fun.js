@@ -5,16 +5,14 @@ function doVibrate() {
 function geoFindMe() {
 
     const status = document.querySelector('#status');
-    const mapLink = document.querySelector('#map-link');
 
-    mapLink.textContent = '';
+    status.textContent = '';
 
     function success(position) {
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
 
-        status.textContent = '';
-        mapLink.textContent = `Tu es à la latitude: ${latitude} ° et à la Longitude: ${longitude} °, sur la planète Terre.`;
+        status.textContent = `Tu es à la latitude: ${latitude} ° et à la Longitude: ${longitude} °, sur la planète Terre.`;
     }
 
     function error() {
@@ -45,7 +43,7 @@ function startVideo() {
 
 function takePicture() {
     // Elements for taking the snapshot
-    var canvas = document.getElementById('canvas');
+    var canvas = document.getElementById('#canvas-touch');
     var context = canvas.getContext('2d');
     var video = document.getElementById('video');
 
