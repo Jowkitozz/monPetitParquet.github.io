@@ -14,7 +14,19 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return view('index');
+});
+
+$router->get('/actus', function () use ($router) {
+    return view('actus');
+});
+
+$router->get('/qsm', function () use ($router) {
+    return view('qsm');
+});
+
+$router->get('/contact', function () use ($router) {
+    return view('contact');
 });
 
 $router->group(['prefix' => 'api'], function () use ($router) {

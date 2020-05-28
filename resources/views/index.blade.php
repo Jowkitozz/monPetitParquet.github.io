@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zxx" class="no-js">
+<html lang="fr" class="no-js">
 
 <head>
 
@@ -50,10 +50,10 @@
                 </div>
                 <nav id="nav-menu-container">
                     <ul class="nav-menu">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="about.html">Actualités</a></li>
-                        <li><a href="services.html">Qui sommes nous ?</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="/">Accueil</a></li>
+                        <li><a href="/actus">Actualités</a></li>
+                        <li><a href="/qsm">Qui sommes nous ?</a></li>
+                        <li><a href="/contact">Contact</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
             </div>
@@ -272,7 +272,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/monPetitParquet.github.io/service-worker.js')
+                navigator.serviceWorker.register('basketmpp.eu-west-3.elasticbeanstalk.com/service-worker.js')
                     .then((reg) => {
                         console.log('Service worker registered.', reg);
                     });
