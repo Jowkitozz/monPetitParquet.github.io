@@ -71,9 +71,6 @@
                         juillet 2019 sur la NBA.
                     </p>
                     <a href="#" class="primary-btn text-uppercase">Découvrez maintenant</a>
-                    <input type="button" value="Fais moi vibrer !" onclick="doVibrate();" />
-
-                    <input type="button" value="Où suis-je ?" onclick="geoFindMe();" />
                     <p id="status"></p>
 
 
@@ -85,14 +82,35 @@
         </div>
     </section>
     <!-- End banner Area -->
-    <input type="button" value="Me vois-tu ?" onclick="startVideo();" />
-    <input type="button" value="Suis-je belle ?" onclick="takePicture();" />
-    <input type="button" value="Arrête !" onclick="stopVideo();" />
+
+    <section class="testimonial-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Fonctionnalité PWA</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <input type="button" class="primary-btn text-uppercase" value="Fais moi vibrer !"
+                    onclick="doVibrate();" />
+
+                <input type="button" class="primary-btn text-uppercase" value="Où suis-je ?" onclick="geoFindMe();" />
+                <input type="button" value="Me vois-tu ?" onclick="startVideo();" />
+                <input type="button" value="Suis-je belle ?" onclick="takePicture();" />
+                <input type="button" value="Arrête !" onclick="stopVideo();" />
+
+                <canvas id="canvas-touch" width="200" height="200" style="border:solid black 1px;">
+                    Pas possible
+                </canvas>
+            </div>
+        </div>
+    </section>
 
 
-    <canvas id="canvas-touch" width="200" height="200" style="border:solid black 1px;">
-        Pas possible
-    </canvas>
+
+
     <p id="touch"></p>
 
     <!-- Start fact Area -->
