@@ -2,6 +2,7 @@
 <html lang="zxx" class="no-js">
 
 <head>
+
     <!-- Mobile Specific Meta -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Author Meta -->
@@ -36,9 +37,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="manifest" href="/monPetitParquet.github.io/manifest.json">
 
+
 </head>
 
 <body>
+    <script src="js/native.fun.js"></script>
     <header id="header">
         <div class="container main-menu">
             <div class="row align-items-center justify-content-between d-flex">
@@ -68,6 +71,9 @@
                         juillet 2019 sur la NBA.
                     </p>
                     <a href="#" class="primary-btn text-uppercase">Découvrez maintenant</a>
+
+
+
                 </div>
                 <div class="col-lg-6 col-md-6 banner-right d-flex align-self-end">
                     <img class="img-fluid" src="img/hero-img.jp2" alt="">
@@ -76,6 +82,33 @@
         </div>
     </section>
     <!-- End banner Area -->
+
+    <section class="testimonial-area section-gap">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="menu-content pb-70 col-lg-8">
+                    <div class="title text-center">
+                        <h1 class="mb-10">Fonctionnalité PWA</h1>
+                    </div>
+                </div>
+            </div>
+            <input type="button" class="btn btn-warning" value="Fais moi vibrer !" onclick="doVibrate();" />
+            <input type="button" class="btn btn-warning" value="Où suis-je ?" onclick="geoFindMe();" />
+            <input type="button" class="btn btn-warning" value="Me vois-tu ?" onclick="startVideo();" />
+            <input type="button" class="btn btn-warning" value="Suis-je belle ?" onclick="takePicture();" />
+            <input type="button" class="btn btn-warning" value="Arrête !" onclick="stopVideo();" />
+            <p id="status"></p>
+            <canvas id="canvas-touch" width="200" height="200" style="border:solid black 1px;">
+                Pas possible
+            </canvas>
+            <p id="touch"></p>
+        </div>
+    </section>
+
+
+
+
+
 
     <!-- Start fact Area -->
     <section class="facts-area section-gap" id="facts-area">
